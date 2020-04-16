@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vOb-k3-zQS">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kitten DetailsVC-->
+        <scene sceneID="BEj-9m-FJM">
+            <objects>
+                <viewController storyboardIdentifier="KittenDetails" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vOb-k3-zQS" customClass="KittenDetailsVC" customModule="KittenRescue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8u4-lr-eum">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VTb-kf-IJ5">
+                                <rect key="frame" x="125" y="10.5" width="125" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="N2u-cJ-WbL"/>
+                                    <constraint firstAttribute="width" constant="125" id="rXx-Vz-WYb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mix-FM-Fiy">
+                                <rect key="frame" x="50" y="592" width="275" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="XXc-Sr-exC"/>
+                                </constraints>
+                                <state key="normal" title="Add Kitten"/>
+                                <connections>
+                                    <action selector="registerkitten:" destination="vOb-k3-zQS" eventType="touchUpInside" id="Jpq-xt-OhL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6oN-jZ-5SD">
+                                <rect key="frame" x="50" y="165" width="275" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lbC-TU-MFp">
+                                <rect key="frame" x="50" y="239" width="275" height="64"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jvR-9b-2Jx">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAJ-1i-bQw">
+                                        <rect key="frame" x="0.0" y="34" width="275" height="30"/>
+                                        <state key="normal" title="Calculate Age"/>
+                                        <connections>
+                                            <action selector="beginQuestionnaire:" destination="vOb-k3-zQS" eventType="touchUpInside" id="hr5-qf-4UL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sex" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8eh-ux-p3s">
+                                <rect key="frame" x="50" y="328" width="275" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8eh-ux-p3s" firstAttribute="top" secondItem="lbC-TU-MFp" secondAttribute="bottom" constant="25" id="3tg-gg-Usm"/>
+                            <constraint firstItem="VTb-kf-IJ5" firstAttribute="top" secondItem="0yW-0h-QL3" secondAttribute="top" constant="10" id="3vT-e0-Kuy"/>
+                            <constraint firstItem="0yW-0h-QL3" firstAttribute="trailing" secondItem="Mix-FM-Fiy" secondAttribute="trailing" constant="50" id="8SO-r5-BU3"/>
+                            <constraint firstItem="VTb-kf-IJ5" firstAttribute="centerX" secondItem="8u4-lr-eum" secondAttribute="centerX" id="AIW-jd-385"/>
+                            <constraint firstItem="6oN-jZ-5SD" firstAttribute="top" secondItem="VTb-kf-IJ5" secondAttribute="bottom" constant="30" id="FSq-K1-B6Y"/>
+                            <constraint firstItem="lbC-TU-MFp" firstAttribute="leading" secondItem="0yW-0h-QL3" secondAttribute="leading" constant="50" id="Qoh-P7-fpN"/>
+                            <constraint firstItem="0yW-0h-QL3" firstAttribute="bottom" secondItem="Mix-FM-Fiy" secondAttribute="bottom" constant="30" id="X8l-kc-vnc"/>
+                            <constraint firstItem="0yW-0h-QL3" firstAttribute="trailing" secondItem="6oN-jZ-5SD" secondAttribute="trailing" constant="50" id="chY-q7-edk"/>
+                            <constraint firstItem="8eh-ux-p3s" firstAttribute="leading" secondItem="0yW-0h-QL3" secondAttribute="leading" constant="50" id="fjo-tB-kKH"/>
+                            <constraint firstItem="Mix-FM-Fiy" firstAttribute="leading" secondItem="0yW-0h-QL3" secondAttribute="leading" constant="50" id="gzB-mc-Xlg"/>
+                            <constraint firstItem="0yW-0h-QL3" firstAttribute="trailing" secondItem="lbC-TU-MFp" secondAttribute="trailing" constant="50" id="kdA-1M-aZO"/>
+                            <constraint firstItem="lbC-TU-MFp" firstAttribute="top" secondItem="6oN-jZ-5SD" secondAttribute="bottom" constant="40" id="qIb-8e-CtF"/>
+                            <constraint firstItem="0yW-0h-QL3" firstAttribute="trailing" secondItem="8eh-ux-p3s" secondAttribute="trailing" constant="50" id="wiM-he-gFp"/>
+                            <constraint firstItem="6oN-jZ-5SD" firstAttribute="leading" secondItem="0yW-0h-QL3" secondAttribute="leading" constant="50" id="x7F-1g-zce"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0yW-0h-QL3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HFl-mn-W5O"/>
+                    <connections>
+                        <outlet property="kittenAgeTextField" destination="jvR-9b-2Jx" id="5CL-E3-kiv"/>
+                        <outlet property="kittenImageView" destination="VTb-kf-IJ5" id="X1c-Ya-s1i"/>
+                        <outlet property="kittenNameTextField" destination="6oN-jZ-5SD" id="RD1-3g-c5l"/>
+                        <outlet property="kittenSexTextField" destination="8eh-ux-p3s" id="NVZ-t5-ZmV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCf-v5-nvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2223.1999999999998" y="162.3688155922039"/>
+        </scene>
+        <!--Add Kitten-->
+        <scene sceneID="vPf-g8-eGT">
+            <objects>
+                <viewController storyboardIdentifier="Questionnaire" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4fi-No-7Po" customClass="QuestionnaireVC" customModule="KittenRescue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VgW-7O-uQy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Prompt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A49-tB-7bq">
+                                <rect key="frame" x="20" y="301.5" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nF0-4K-SUu">
+                                <rect key="frame" x="50" y="497" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="f3w-SF-bgC"/>
+                                </constraints>
+                                <state key="normal" title="Yes"/>
+                                <connections>
+                                    <action selector="choiceSelected:" destination="4fi-No-7Po" eventType="touchUpInside" id="1zu-hs-poI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hW2-Zw-A7O">
+                                <rect key="frame" x="50" y="567" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0U3-3X-hdn"/>
+                                </constraints>
+                                <state key="normal" title="No"/>
+                                <connections>
+                                    <action selector="choiceSelected:" destination="4fi-No-7Po" eventType="touchUpInside" id="eFR-GL-8ZE"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="scg-4W-FLf">
+                                <rect key="frame" x="152.5" y="201.5" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Fye-iC-aWP"/>
+                                    <constraint firstAttribute="width" constant="70" id="aTi-TS-pgw"/>
+                                </constraints>
+                            </imageView>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbq-9T-WJG">
+                                <rect key="frame" x="20" y="413" width="335" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRA-4b-qOx">
+                                <rect key="frame" x="20" y="20" width="59" height="30"/>
+                                <state key="normal" title="Previous"/>
+                                <connections>
+                                    <action selector="previousQuestion:" destination="4fi-No-7Po" eventType="touchUpInside" id="iVT-Wm-ZjV"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW2-lZ-Ssr">
+                                <rect key="frame" x="306" y="20" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="4fi-No-7Po" eventType="touchUpInside" id="R9h-qn-Oia"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lRA-4b-qOx" firstAttribute="leading" secondItem="2lu-7R-iOo" secondAttribute="leading" constant="20" id="1pR-Ne-lzA"/>
+                            <constraint firstItem="2lu-7R-iOo" firstAttribute="trailing" secondItem="SW2-lZ-Ssr" secondAttribute="trailing" constant="20" id="8nH-MM-zvN"/>
+                            <constraint firstItem="hbq-9T-WJG" firstAttribute="leading" secondItem="2lu-7R-iOo" secondAttribute="leading" constant="20" id="B1m-zX-K5r"/>
+                            <constraint firstItem="hW2-Zw-A7O" firstAttribute="top" secondItem="nF0-4K-SUu" secondAttribute="bottom" constant="20" id="DuH-OH-rCL"/>
+                            <constraint firstItem="2lu-7R-iOo" firstAttribute="trailing" secondItem="nF0-4K-SUu" secondAttribute="trailing" constant="50" id="DwZ-c3-iQw"/>
+                            <constraint firstItem="A49-tB-7bq" firstAttribute="centerY" secondItem="VgW-7O-uQy" secondAttribute="centerY" constant="-20" id="FPe-j6-ZdU"/>
+                            <constraint firstItem="2lu-7R-iOo" firstAttribute="trailing" secondItem="A49-tB-7bq" secondAttribute="trailing" constant="20" id="GG2-DZ-nYV"/>
+                            <constraint firstItem="A49-tB-7bq" firstAttribute="top" secondItem="scg-4W-FLf" secondAttribute="bottom" constant="30" id="Hbx-il-2bo"/>
+                            <constraint firstItem="SW2-lZ-Ssr" firstAttribute="top" secondItem="2lu-7R-iOo" secondAttribute="top" constant="20" id="Hdg-Zq-KEP"/>
+                            <constraint firstItem="nF0-4K-SUu" firstAttribute="leading" secondItem="2lu-7R-iOo" secondAttribute="leading" constant="50" id="I27-zB-Rdw"/>
+                            <constraint firstItem="scg-4W-FLf" firstAttribute="centerX" secondItem="VgW-7O-uQy" secondAttribute="centerX" id="LfY-bp-3V1"/>
+                            <constraint firstItem="lRA-4b-qOx" firstAttribute="top" secondItem="2lu-7R-iOo" secondAttribute="top" constant="20" id="LgO-5x-Och"/>
+                            <constraint firstItem="hW2-Zw-A7O" firstAttribute="leading" secondItem="2lu-7R-iOo" secondAttribute="leading" constant="50" id="Lpk-P3-uen"/>
+                            <constraint firstItem="nF0-4K-SUu" firstAttribute="top" secondItem="hbq-9T-WJG" secondAttribute="bottom" constant="50" id="OJL-Fn-cVn"/>
+                            <constraint firstItem="2lu-7R-iOo" firstAttribute="trailing" secondItem="hbq-9T-WJG" secondAttribute="trailing" constant="20" id="dKf-QB-07U"/>
+                            <constraint firstItem="A49-tB-7bq" firstAttribute="leading" secondItem="2lu-7R-iOo" secondAttribute="leading" constant="20" id="eb2-qz-9xg"/>
+                            <constraint firstItem="2lu-7R-iOo" firstAttribute="trailing" secondItem="hW2-Zw-A7O" secondAttribute="trailing" constant="50" id="fq1-Bo-HpE"/>
+                            <constraint firstItem="2lu-7R-iOo" firstAttribute="bottom" secondItem="hW2-Zw-A7O" secondAttribute="bottom" constant="50" id="ysJ-ui-YLU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2lu-7R-iOo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Kitten" id="AdJ-77-RhG"/>
+                    <connections>
+                        <outlet property="choiceOneButton" destination="nF0-4K-SUu" id="ayx-HJ-71r"/>
+                        <outlet property="choiceTwoButton" destination="hW2-Zw-A7O" id="N31-xR-N0i"/>
+                        <outlet property="previousQuestionButton" destination="lRA-4b-qOx" id="vXZ-BR-eSB"/>
+                        <outlet property="questionImageView" destination="scg-4W-FLf" id="zc0-2X-DDc"/>
+                        <outlet property="questionLabel" destination="A49-tB-7bq" id="i4I-Dk-m2h"/>
+                        <outlet property="submitQuestionnaireButton" destination="SW2-lZ-Ssr" id="qJJ-d2-2b7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lny-8h-yHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3041" y="162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc" catalog="system" width="115" height="128"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

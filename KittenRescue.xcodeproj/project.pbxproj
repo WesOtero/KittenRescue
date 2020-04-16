@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E217A882444FE8F0000AD90 /* QuestionnaireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E217A872444FE8F0000AD90 /* QuestionnaireVC.swift */; };
+		2E217A8B2444FECC0000AD90 /* Questionnaire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E217A892444FECC0000AD90 /* Questionnaire.storyboard */; };
+		2E4DD6532447997D007F9709 /* KittenDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4DD6522447997D007F9709 /* KittenDetailsVC.swift */; };
+		2E4F1FC8244369E80041465A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FC7244369E80041465A /* AppDelegate.swift */; };
+		2E4F1FCA244369E80041465A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FC9244369E80041465A /* SceneDelegate.swift */; };
+		2E4F1FCF244369E80041465A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4F1FCD244369E80041465A /* Main.storyboard */; };
+		2E4F1FD2244369E80041465A /* KittenRescue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FD0244369E80041465A /* KittenRescue.xcdatamodeld */; };
+		2E4F1FD4244369EA0041465A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E4F1FD3244369EA0041465A /* Assets.xcassets */; };
+		2E4F1FD7244369EA0041465A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4F1FD5244369EA0041465A /* LaunchScreen.storyboard */; };
+		2E4F1FE2244369EA0041465A /* KittenRescueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FE1244369EA0041465A /* KittenRescueTests.swift */; };
+		2E4F1FED244369EA0041465A /* KittenRescueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FEC244369EA0041465A /* KittenRescueUITests.swift */; };
+		2E8742A32443C4EF00190AAA /* CellCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8742A22443C4EF00190AAA /* CellCardView.swift */; };
+		2E8742A52443CC2600190AAA /* KittenProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8742A42443CC2600190AAA /* KittenProfileVC.swift */; };
+		2E934F182444CE6E00322D26 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E934F172444CE6E00322D26 /* Question.swift */; };
+		2E934F1B2444D22F00322D26 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E934F1A2444D22F00322D26 /* NotificationService.swift */; };
+		2E9CFC992444B21C00057429 /* QuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CFC982444B21C00057429 /* QuestionList.swift */; };
+		2E9CFC9B2444B29700057429 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CFC9A2444B29700057429 /* ErrorMessages.swift */; };
+		2E9E7BF52443AF9A007B9832 /* KittenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7BF42443AF9A007B9832 /* KittenTableViewCell.swift */; };
+		2E9E7BF72443AFB2007B9832 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7BF62443AFB2007B9832 /* NotificationTableViewCell.swift */; };
+		2E9E7BFA2443BAF3007B9832 /* Kitten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7BF92443BAF3007B9832 /* Kitten.swift */; };
+		2E9E7BFC2443BB02007B9832 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7BFB2443BB02007B9832 /* Notification.swift */; };
+		2ECFF1CE2443A8FE006B7057 /* KittenDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECFF1CC2443A8FE006B7057 /* KittenDashboard.storyboard */; };
+		2ECFF1D52443AA67006B7057 /* NotificationsDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECFF1D42443AA67006B7057 /* NotificationsDashboard.storyboard */; };
+		2ECFF1D72443AD16006B7057 /* KittenDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECFF1D62443AD16006B7057 /* KittenDashboardVC.swift */; };
+		2ECFF1D92443AD33006B7057 /* NotificationsDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECFF1D82443AD33006B7057 /* NotificationsDashboardVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E4F1FDE244369EA0041465A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E4F1FBC244369E80041465A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4F1FC3244369E80041465A;
+			remoteInfo = KittenRescue;
+		};
+		2E4F1FE9244369EA0041465A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E4F1FBC244369E80041465A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4F1FC3244369E80041465A;
+			remoteInfo = KittenRescue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E217A872444FE8F0000AD90 /* QuestionnaireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireVC.swift; sourceTree = "<group>"; };
+		2E217A8A2444FECC0000AD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KittenRescue/Screens/Storyboards/KittenRescue/Screens/Storyboards/Base.lproj/Questionnaire.storyboard; sourceTree = "<group>"; };
+		2E4DD6522447997D007F9709 /* KittenDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenDetailsVC.swift; sourceTree = "<group>"; };
+		2E4F1FC4244369E80041465A /* KittenRescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KittenRescue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4F1FC7244369E80041465A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E4F1FC9244369E80041465A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2E4F1FCE244369E80041465A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E4F1FD1244369E80041465A /* KittenRescue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KittenRescue.xcdatamodel; sourceTree = "<group>"; };
+		2E4F1FD3244369EA0041465A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E4F1FD6244369EA0041465A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E4F1FD8244369EA0041465A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E4F1FDD244369EA0041465A /* KittenRescueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KittenRescueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4F1FE1244369EA0041465A /* KittenRescueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenRescueTests.swift; sourceTree = "<group>"; };
+		2E4F1FE3244369EA0041465A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E4F1FE8244369EA0041465A /* KittenRescueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KittenRescueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E4F1FEC244369EA0041465A /* KittenRescueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenRescueUITests.swift; sourceTree = "<group>"; };
+		2E4F1FEE244369EA0041465A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E8742A22443C4EF00190AAA /* CellCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCardView.swift; sourceTree = "<group>"; };
+		2E8742A42443CC2600190AAA /* KittenProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenProfileVC.swift; sourceTree = "<group>"; };
+		2E934F172444CE6E00322D26 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		2E934F1A2444D22F00322D26 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		2E9CFC982444B21C00057429 /* QuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionList.swift; sourceTree = "<group>"; };
+		2E9CFC9A2444B29700057429 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		2E9E7BF42443AF9A007B9832 /* KittenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenTableViewCell.swift; sourceTree = "<group>"; };
+		2E9E7BF62443AFB2007B9832 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		2E9E7BF92443BAF3007B9832 /* Kitten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitten.swift; sourceTree = "<group>"; };
+		2E9E7BFB2443BB02007B9832 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		2ECFF1CD2443A8FE006B7057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KittenRescue/Screens/Storyboards/Base.lproj/KittenDashboard.storyboard; sourceTree = "<group>"; };
+		2ECFF1D42443AA67006B7057 /* NotificationsDashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotificationsDashboard.storyboard; sourceTree = "<group>"; };
+		2ECFF1D62443AD16006B7057 /* KittenDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenDashboardVC.swift; sourceTree = "<group>"; };
+		2ECFF1D82443AD33006B7057 /* NotificationsDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsDashboardVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E4F1FC1244369E80041465A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4F1FDA244369EA0041465A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4F1FE5244369EA0041465A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E4F1FBB244369E80041465A = {
+			isa = PBXGroup;
+			children = (
+				2E4F1FC6244369E80041465A /* KittenRescue */,
+				2E4F1FE0244369EA0041465A /* KittenRescueTests */,
+				2E4F1FEB244369EA0041465A /* KittenRescueUITests */,
+				2E4F1FC5244369E80041465A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E4F1FC5244369E80041465A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E4F1FC4244369E80041465A /* KittenRescue.app */,
+				2E4F1FDD244369EA0041465A /* KittenRescueTests.xctest */,
+				2E4F1FE8244369EA0041465A /* KittenRescueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E4F1FC6244369E80041465A /* KittenRescue */ = {
+			isa = PBXGroup;
+			children = (
+				2E9E7BF82443BAE0007B9832 /* Data Models */,
+				2E934F162444C8EF00322D26 /* Persistance */,
+				2E934F192444D20700322D26 /* Services */,
+				2E4F1FFA24436A5F0041465A /* Screens */,
+				2E4F1FFC24436BC00041465A /* Support */,
+				2E9E7BF32443AF63007B9832 /* UIComponents */,
+				2E4F1FFB24436A750041465A /* Utilities */,
+				2E4F1FD3244369EA0041465A /* Assets.xcassets */,
+				2E4F1FD8244369EA0041465A /* Info.plist */,
+				2E4F1FD0244369E80041465A /* KittenRescue.xcdatamodeld */,
+			);
+			path = KittenRescue;
+			sourceTree = "<group>";
+		};
+		2E4F1FE0244369EA0041465A /* KittenRescueTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E4F1FE1244369EA0041465A /* KittenRescueTests.swift */,
+				2E4F1FE3244369EA0041465A /* Info.plist */,
+			);
+			path = KittenRescueTests;
+			sourceTree = "<group>";
+		};
+		2E4F1FEB244369EA0041465A /* KittenRescueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E4F1FEC244369EA0041465A /* KittenRescueUITests.swift */,
+				2E4F1FEE244369EA0041465A /* Info.plist */,
+			);
+			path = KittenRescueUITests;
+			sourceTree = "<group>";
+		};
+		2E4F1FFA24436A5F0041465A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2E4F1FFE24436CF00041465A /* Storyboards */,
+				2E4F1FFD24436CE00041465A /* View Controllers */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2E4F1FFB24436A750041465A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2E9CFC9A2444B29700057429 /* ErrorMessages.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2E4F1FFC24436BC00041465A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				2E4F1FC7244369E80041465A /* AppDelegate.swift */,
+				2E4F1FC9244369E80041465A /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		2E4F1FFD24436CE00041465A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2ECFF1D62443AD16006B7057 /* KittenDashboardVC.swift */,
+				2E8742A42443CC2600190AAA /* KittenProfileVC.swift */,
+				2ECFF1D82443AD33006B7057 /* NotificationsDashboardVC.swift */,
+				2E4DD6522447997D007F9709 /* KittenDetailsVC.swift */,
+				2E217A872444FE8F0000AD90 /* QuestionnaireVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2E4F1FFE24436CF00041465A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2E4F1FD5244369EA0041465A /* LaunchScreen.storyboard */,
+				2E4F1FCD244369E80041465A /* Main.storyboard */,
+				2ECFF1CC2443A8FE006B7057 /* KittenDashboard.storyboard */,
+				2ECFF1D42443AA67006B7057 /* NotificationsDashboard.storyboard */,
+				2E217A892444FECC0000AD90 /* Questionnaire.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2E934F162444C8EF00322D26 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		2E934F192444D20700322D26 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2E934F1A2444D22F00322D26 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2E9E7BF32443AF63007B9832 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				2E9E7BF42443AF9A007B9832 /* KittenTableViewCell.swift */,
+				2E9E7BF62443AFB2007B9832 /* NotificationTableViewCell.swift */,
+				2E8742A22443C4EF00190AAA /* CellCardView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		2E9E7BF82443BAE0007B9832 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E9E7BF92443BAF3007B9832 /* Kitten.swift */,
+				2E9E7BFB2443BB02007B9832 /* Notification.swift */,
+				2E934F172444CE6E00322D26 /* Question.swift */,
+				2E9CFC982444B21C00057429 /* QuestionList.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E4F1FC3244369E80041465A /* KittenRescue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E4F1FF1244369EA0041465A /* Build configuration list for PBXNativeTarget "KittenRescue" */;
+			buildPhases = (
+				2E4F1FC0244369E80041465A /* Sources */,
+				2E4F1FC1244369E80041465A /* Frameworks */,
+				2E4F1FC2244369E80041465A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KittenRescue;
+			productName = KittenRescue;
+			productReference = 2E4F1FC4244369E80041465A /* KittenRescue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E4F1FDC244369EA0041465A /* KittenRescueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E4F1FF4244369EA0041465A /* Build configuration list for PBXNativeTarget "KittenRescueTests" */;
+			buildPhases = (
+				2E4F1FD9244369EA0041465A /* Sources */,
+				2E4F1FDA244369EA0041465A /* Frameworks */,
+				2E4F1FDB244369EA0041465A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E4F1FDF244369EA0041465A /* PBXTargetDependency */,
+			);
+			name = KittenRescueTests;
+			productName = KittenRescueTests;
+			productReference = 2E4F1FDD244369EA0041465A /* KittenRescueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E4F1FE7244369EA0041465A /* KittenRescueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E4F1FF7244369EA0041465A /* Build configuration list for PBXNativeTarget "KittenRescueUITests" */;
+			buildPhases = (
+				2E4F1FE4244369EA0041465A /* Sources */,
+				2E4F1FE5244369EA0041465A /* Frameworks */,
+				2E4F1FE6244369EA0041465A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E4F1FEA244369EA0041465A /* PBXTargetDependency */,
+			);
+			name = KittenRescueUITests;
+			productName = KittenRescueUITests;
+			productReference = 2E4F1FE8244369EA0041465A /* KittenRescueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E4F1FBC244369E80041465A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Wesley Otero";
+				TargetAttributes = {
+					2E4F1FC3244369E80041465A = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					2E4F1FDC244369EA0041465A = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 2E4F1FC3244369E80041465A;
+					};
+					2E4F1FE7244369EA0041465A = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 2E4F1FC3244369E80041465A;
+					};
+				};
+			};
+			buildConfigurationList = 2E4F1FBF244369E80041465A /* Build configuration list for PBXProject "KittenRescue" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E4F1FBB244369E80041465A;
+			productRefGroup = 2E4F1FC5244369E80041465A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E4F1FC3244369E80041465A /* KittenRescue */,
+				2E4F1FDC244369EA0041465A /* KittenRescueTests */,
+				2E4F1FE7244369EA0041465A /* KittenRescueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E4F1FC2244369E80041465A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECFF1CE2443A8FE006B7057 /* KittenDashboard.storyboard in Resources */,
+				2E4F1FD7244369EA0041465A /* LaunchScreen.storyboard in Resources */,
+				2E217A8B2444FECC0000AD90 /* Questionnaire.storyboard in Resources */,
+				2E4F1FD4244369EA0041465A /* Assets.xcassets in Resources */,
+				2E4F1FCF244369E80041465A /* Main.storyboard in Resources */,
+				2ECFF1D52443AA67006B7057 /* NotificationsDashboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4F1FDB244369EA0041465A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4F1FE6244369EA0041465A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E4F1FC0244369E80041465A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E217A882444FE8F0000AD90 /* QuestionnaireVC.swift in Sources */,
+				2E9CFC9B2444B29700057429 /* ErrorMessages.swift in Sources */,
+				2E8742A32443C4EF00190AAA /* CellCardView.swift in Sources */,
+				2E4DD6532447997D007F9709 /* KittenDetailsVC.swift in Sources */,
+				2E9E7BF72443AFB2007B9832 /* NotificationTableViewCell.swift in Sources */,
+				2E4F1FC8244369E80041465A /* AppDelegate.swift in Sources */,
+				2E9E7BFC2443BB02007B9832 /* Notification.swift in Sources */,
+				2E934F182444CE6E00322D26 /* Question.swift in Sources */,
+				2E4F1FCA244369E80041465A /* SceneDelegate.swift in Sources */,
+				2E9E7BF52443AF9A007B9832 /* KittenTableViewCell.swift in Sources */,
+				2ECFF1D72443AD16006B7057 /* KittenDashboardVC.swift in Sources */,
+				2E9CFC992444B21C00057429 /* QuestionList.swift in Sources */,
+				2E8742A52443CC2600190AAA /* KittenProfileVC.swift in Sources */,
+				2E4F1FD2244369E80041465A /* KittenRescue.xcdatamodeld in Sources */,
+				2E9E7BFA2443BAF3007B9832 /* Kitten.swift in Sources */,
+				2E934F1B2444D22F00322D26 /* NotificationService.swift in Sources */,
+				2ECFF1D92443AD33006B7057 /* NotificationsDashboardVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4F1FD9244369EA0041465A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4F1FE2244369EA0041465A /* KittenRescueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E4F1FE4244369EA0041465A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4F1FED244369EA0041465A /* KittenRescueUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E4F1FDF244369EA0041465A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E4F1FC3244369E80041465A /* KittenRescue */;
+			targetProxy = 2E4F1FDE244369EA0041465A /* PBXContainerItemProxy */;
+		};
+		2E4F1FEA244369EA0041465A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E4F1FC3244369E80041465A /* KittenRescue */;
+			targetProxy = 2E4F1FE9244369EA0041465A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E217A892444FECC0000AD90 /* Questionnaire.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E217A8A2444FECC0000AD90 /* Base */,
+			);
+			name = Questionnaire.storyboard;
+			sourceTree = "<group>";
+		};
+		2E4F1FCD244369E80041465A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E4F1FCE244369E80041465A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E4F1FD5244369EA0041465A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E4F1FD6244369EA0041465A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2ECFF1CC2443A8FE006B7057 /* KittenDashboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2ECFF1CD2443A8FE006B7057 /* Base */,
+			);
+			name = KittenDashboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E4F1FEF244369EA0041465A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E4F1FF0244369EA0041465A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E4F1FF2244369EA0041465A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XRSJX3824;
+				INFOPLIST_FILE = KittenRescue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.wesleyotero.KittenRescue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E4F1FF3244369EA0041465A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XRSJX3824;
+				INFOPLIST_FILE = KittenRescue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.wesleyotero.KittenRescue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E4F1FF5244369EA0041465A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XRSJX3824;
+				INFOPLIST_FILE = KittenRescueTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.wesleyotero.KittenRescueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KittenRescue.app/KittenRescue";
+			};
+			name = Debug;
+		};
+		2E4F1FF6244369EA0041465A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XRSJX3824;
+				INFOPLIST_FILE = KittenRescueTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.wesleyotero.KittenRescueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KittenRescue.app/KittenRescue";
+			};
+			name = Release;
+		};
+		2E4F1FF8244369EA0041465A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XRSJX3824;
+				INFOPLIST_FILE = KittenRescueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.wesleyotero.KittenRescueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KittenRescue;
+			};
+			name = Debug;
+		};
+		2E4F1FF9244369EA0041465A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XRSJX3824;
+				INFOPLIST_FILE = KittenRescueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.wesleyotero.KittenRescueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KittenRescue;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E4F1FBF244369E80041465A /* Build configuration list for PBXProject "KittenRescue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4F1FEF244369EA0041465A /* Debug */,
+				2E4F1FF0244369EA0041465A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E4F1FF1244369EA0041465A /* Build configuration list for PBXNativeTarget "KittenRescue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4F1FF2244369EA0041465A /* Debug */,
+				2E4F1FF3244369EA0041465A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E4F1FF4244369EA0041465A /* Build configuration list for PBXNativeTarget "KittenRescueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4F1FF5244369EA0041465A /* Debug */,
+				2E4F1FF6244369EA0041465A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E4F1FF7244369EA0041465A /* Build configuration list for PBXNativeTarget "KittenRescueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E4F1FF8244369EA0041465A /* Debug */,
+				2E4F1FF9244369EA0041465A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2E4F1FD0244369E80041465A /* KittenRescue.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2E4F1FD1244369E80041465A /* KittenRescue.xcdatamodel */,
+			);
+			currentVersion = 2E4F1FD1244369E80041465A /* KittenRescue.xcdatamodel */;
+			path = KittenRescue.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2E4F1FBC244369E80041465A /* Project object */;
+}
