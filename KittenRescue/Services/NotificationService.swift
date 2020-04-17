@@ -29,25 +29,5 @@ class NotificationService {
         }
     }
     
-    func configureNotification() {
-    
-    // Strep 2: Create Notification Content
-        let content = UNMutableNotificationContent()
-        content.title = ""
-        content.body = ""
-        content.sound = UNNotificationSound.default
-    
-    //Step 3: Create trigger
-        let date = Date().addingTimeInterval(5)
-        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
-        
-        let uuidString = UUID().uuidString
-        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
-        
-        center.add(request) { (error) in
-            //Error handling here
-        }
-    }
     
 }
