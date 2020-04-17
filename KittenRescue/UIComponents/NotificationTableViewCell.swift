@@ -9,9 +9,9 @@
 import UIKit
 
 class NotificationTableViewCell: UITableViewCell {
-
+   
     @IBOutlet weak var notificationNameLabel: UILabel!
     @IBOutlet weak var notificationRequirementLabel: UILabel!
-    @IBOutlet weak var notificationStatusLabel: UILabel!    
-
+    @IBOutlet weak var notificationStatusLabel: UILabel!
+    
 }

@@ -33,8 +33,8 @@ class NotificationService {
     
     // Strep 2: Create Notification Content
         let content = UNMutableNotificationContent()
-        content.title = "TITLE"
-        content.body = "Look at this sexy body"
+        content.title = ""
+        content.body = ""
         content.sound = UNNotificationSound.default
     
     //Step 3: Create trigger

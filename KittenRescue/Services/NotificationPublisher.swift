@@ -11,7 +11,7 @@ import UserNotifications
 
 class NotificationPublisher: NSObject {
     
-    func sendNotification(title: String, subtitle: String, body: String, badge: Int?, delayInterval: Int?) {
+    func sendNotification(uniqueId: String, title: String, subtitle: String, body: String, badge: Int?, delayInterval: Int?) {
         
         let notificationContent = UNMutableNotificationContent()
         notificationContent.title = title
@@ -26,7 +26,7 @@ class NotificationPublisher: NSObject {
         
         if let badge = badge {
             var currentBadgeCount = UIApplication.shared.applicationIconBadgeNumber
-            currentBadgeCount += badge
+            currentBadgeCount += 1
             notificationContent.badge = NSNumber(integerLiteral: currentBadgeCount)
         }
         
@@ -34,7 +34,7 @@ class NotificationPublisher: NSObject {
         
         UNUserNotificationCenter.current().delegate = self
         
-        let request = UNNotificationRequest(identifier: "TestLocalNotification", content: notificationContent, trigger: delayTimeTrigger)
+        let request = UNNotificationRequest(identifier: uniqueId, content: notificationContent, trigger: delayTimeTrigger)
         
         UNUserNotificationCenter.current().add(request) { (error) in
             if let error = error {
