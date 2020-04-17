@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="KittenModel" representedClassName="KittenModel" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="sex" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="NotificationModel" representedClassName="NotificationModel" syncable="YES" codeGenerationType="class">
+        <attribute name="requirement" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="KittenModel" positionX="-54" positionY="-9" width="128" height="103"/>
+        <element name="NotificationModel" positionX="-36" positionY="9" width="128" height="88"/>
+    </elements>
 </model>

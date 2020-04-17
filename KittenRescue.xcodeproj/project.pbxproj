@@ -30,6 +30,9 @@
 		2E9E7BF72443AFB2007B9832 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7BF62443AFB2007B9832 /* NotificationTableViewCell.swift */; };
 		2E9E7BFA2443BAF3007B9832 /* Kitten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7BF92443BAF3007B9832 /* Kitten.swift */; };
 		2E9E7BFC2443BB02007B9832 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7BFB2443BB02007B9832 /* Notification.swift */; };
+		2EC8DB1024496C2000DC0C5C /* DataOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8DB0F24496C2000DC0C5C /* DataOperations.swift */; };
+		2EC8DB1224496E2500DC0C5C /* KittenDataOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8DB1124496E2500DC0C5C /* KittenDataOperations.swift */; };
+		2EC8DB1424496E5100DC0C5C /* NotificationDataOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8DB1324496E5100DC0C5C /* NotificationDataOperations.swift */; };
 		2ECFF1CE2443A8FE006B7057 /* KittenDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECFF1CC2443A8FE006B7057 /* KittenDashboard.storyboard */; };
 		2ECFF1D52443AA67006B7057 /* NotificationsDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECFF1D42443AA67006B7057 /* NotificationsDashboard.storyboard */; };
 		2ECFF1D72443AD16006B7057 /* KittenDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECFF1D62443AD16006B7057 /* KittenDashboardVC.swift */; };
@@ -83,6 +86,9 @@
 		2E9E7BF62443AFB2007B9832 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		2E9E7BF92443BAF3007B9832 /* Kitten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitten.swift; sourceTree = "<group>"; };
 		2E9E7BFB2443BB02007B9832 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		2EC8DB0F24496C2000DC0C5C /* DataOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataOperations.swift; sourceTree = "<group>"; };
+		2EC8DB1124496E2500DC0C5C /* KittenDataOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenDataOperations.swift; sourceTree = "<group>"; };
+		2EC8DB1324496E5100DC0C5C /* NotificationDataOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDataOperations.swift; sourceTree = "<group>"; };
 		2ECFF1CD2443A8FE006B7057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KittenRescue/Screens/Storyboards/Base.lproj/KittenDashboard.storyboard; sourceTree = "<group>"; };
 		2ECFF1D42443AA67006B7057 /* NotificationsDashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotificationsDashboard.storyboard; sourceTree = "<group>"; };
 		2ECFF1D62443AD16006B7057 /* KittenDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenDashboardVC.swift; sourceTree = "<group>"; };
@@ -223,6 +229,9 @@
 		2E934F162444C8EF00322D26 /* Persistance */ = {
 			isa = PBXGroup;
 			children = (
+				2EC8DB0F24496C2000DC0C5C /* DataOperations.swift */,
+				2EC8DB1124496E2500DC0C5C /* KittenDataOperations.swift */,
+				2EC8DB1324496E5100DC0C5C /* NotificationDataOperations.swift */,
 			);
 			path = Persistance;
 			sourceTree = "<group>";
@@ -395,6 +404,7 @@
 				2E9CFC9B2444B29700057429 /* ErrorMessages.swift in Sources */,
 				2E8742A32443C4EF00190AAA /* CellCardView.swift in Sources */,
 				2E4DD6532447997D007F9709 /* KittenDetailsVC.swift in Sources */,
+				2EC8DB1424496E5100DC0C5C /* NotificationDataOperations.swift in Sources */,
 				2E9E7BF72443AFB2007B9832 /* NotificationTableViewCell.swift in Sources */,
 				2E9A514B244928400059DE93 /* NotificationPublisher.swift in Sources */,
 				2E4F1FC8244369E80041465A /* AppDelegate.swift in Sources */,
@@ -408,8 +418,10 @@
 				2E9A5149244923B60059DE93 /* MainVC.swift in Sources */,
 				2E4F1FD2244369E80041465A /* KittenRescue.xcdatamodeld in Sources */,
 				2E9E7BFA2443BAF3007B9832 /* Kitten.swift in Sources */,
+				2EC8DB1024496C2000DC0C5C /* DataOperations.swift in Sources */,
 				2E934F1B2444D22F00322D26 /* NotificationService.swift in Sources */,
 				2ECFF1D92443AD33006B7057 /* NotificationsDashboardVC.swift in Sources */,
+				2EC8DB1224496E2500DC0C5C /* KittenDataOperations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

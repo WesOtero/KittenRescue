@@ -12,7 +12,7 @@ class NotificationsDashboardVC: UIViewController {
     
     @IBOutlet weak var notificationTableView: UITableView!
     
-    var notifications: [Notification] = [Notification(name: "Hello", requirement: "World", status: "None")]
+    var notifications: [Notifications] = [Notifications(name: "Hello", requirement: "World", status: "None")]
     
     override func viewDidLoad() {
         super.viewDidLoad()

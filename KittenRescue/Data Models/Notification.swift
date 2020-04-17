@@ -6,7 +6,7 @@
 //  Copyright © 2020 Wesley Otero. All rights reserved.
 //
 
-struct Notification {
+struct Notifications {
     
     var name: String
     var requirement: String
