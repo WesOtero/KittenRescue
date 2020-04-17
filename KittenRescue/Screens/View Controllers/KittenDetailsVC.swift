@@ -13,7 +13,7 @@ protocol AddKittenDelegate {
 }
 
 class KittenDetailsVC: UIViewController {
-
+    
     @IBOutlet weak var kittenImageView: UIImageView!
     @IBOutlet weak var kittenNameTextField: UITextField!
     @IBOutlet weak var kittenAgeTextField: UITextField!
@@ -34,6 +34,7 @@ class KittenDetailsVC: UIViewController {
     @IBAction func registerkitten(_ sender: Any) {
         let kitten: Kitten = Kitten(name: kittenNameTextField.text!, age: 10.0, sex: kittenSexTextField.text!, weight: 10.0, status: "")
         addKittenDelegate.addKitten(kitten: kitten, isNewContentAvailable: true)
+      
         navigationController?.popViewController(animated: true)
     }
     

@@ -22,6 +22,8 @@
 		2E8742A52443CC2600190AAA /* KittenProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8742A42443CC2600190AAA /* KittenProfileVC.swift */; };
 		2E934F182444CE6E00322D26 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E934F172444CE6E00322D26 /* Question.swift */; };
 		2E934F1B2444D22F00322D26 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E934F1A2444D22F00322D26 /* NotificationService.swift */; };
+		2E9A5149244923B60059DE93 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A5148244923B60059DE93 /* MainVC.swift */; };
+		2E9A514B244928400059DE93 /* NotificationPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A514A244928400059DE93 /* NotificationPublisher.swift */; };
 		2E9CFC992444B21C00057429 /* QuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CFC982444B21C00057429 /* QuestionList.swift */; };
 		2E9CFC9B2444B29700057429 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CFC9A2444B29700057429 /* ErrorMessages.swift */; };
 		2E9E7BF52443AF9A007B9832 /* KittenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7BF42443AF9A007B9832 /* KittenTableViewCell.swift */; };
@@ -73,6 +75,8 @@
 		2E8742A42443CC2600190AAA /* KittenProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenProfileVC.swift; sourceTree = "<group>"; };
 		2E934F172444CE6E00322D26 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		2E934F1A2444D22F00322D26 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		2E9A5148244923B60059DE93 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		2E9A514A244928400059DE93 /* NotificationPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPublisher.swift; sourceTree = "<group>"; };
 		2E9CFC982444B21C00057429 /* QuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionList.swift; sourceTree = "<group>"; };
 		2E9CFC9A2444B29700057429 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
 		2E9E7BF42443AF9A007B9832 /* KittenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenTableViewCell.swift; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 				2ECFF1D82443AD33006B7057 /* NotificationsDashboardVC.swift */,
 				2E4DD6522447997D007F9709 /* KittenDetailsVC.swift */,
 				2E217A872444FE8F0000AD90 /* QuestionnaireVC.swift */,
+				2E9A5148244923B60059DE93 /* MainVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				2E934F1A2444D22F00322D26 /* NotificationService.swift */,
+				2E9A514A244928400059DE93 /* NotificationPublisher.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 				2E8742A32443C4EF00190AAA /* CellCardView.swift in Sources */,
 				2E4DD6532447997D007F9709 /* KittenDetailsVC.swift in Sources */,
 				2E9E7BF72443AFB2007B9832 /* NotificationTableViewCell.swift in Sources */,
+				2E9A514B244928400059DE93 /* NotificationPublisher.swift in Sources */,
 				2E4F1FC8244369E80041465A /* AppDelegate.swift in Sources */,
 				2E9E7BFC2443BB02007B9832 /* Notification.swift in Sources */,
 				2E934F182444CE6E00322D26 /* Question.swift in Sources */,
@@ -398,6 +405,7 @@
 				2ECFF1D72443AD16006B7057 /* KittenDashboardVC.swift in Sources */,
 				2E9CFC992444B21C00057429 /* QuestionList.swift in Sources */,
 				2E8742A52443CC2600190AAA /* KittenProfileVC.swift in Sources */,
+				2E9A5149244923B60059DE93 /* MainVC.swift in Sources */,
 				2E4F1FD2244369E80041465A /* KittenRescue.xcdatamodeld in Sources */,
 				2E9E7BFA2443BAF3007B9832 /* Kitten.swift in Sources */,
 				2E934F1B2444D22F00322D26 /* NotificationService.swift in Sources */,
