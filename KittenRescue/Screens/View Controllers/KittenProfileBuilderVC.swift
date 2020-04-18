@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KittenDetailsVC: UIViewController {
+class KittenProfileBuilderVC: UIViewController {
     
     @IBOutlet weak var kittenImageView: UIImageView!
     @IBOutlet weak var kittenNameTextField: UITextField!
@@ -26,7 +26,11 @@ class KittenDetailsVC: UIViewController {
     }
     
     @IBAction func registerkitten(_ sender: Any) {
-        KittenDataOperations.addKitten(name: kittenNameTextField.text!, age: 10.0, sex: "NIL", status: "NIL")
+        let name = kittenNameTextField.text!
+        let age: Float = (kittenAgeTextField.text! as NSString).floatValue
+        let sex = kittenSexTextField.text!
+        
+        KittenDataOperations.addKitten(name: name, age: age, sex: sex, status: "NIL")
         let update = Notification.Name(rawValue: newKittenNotificationKey)
         NotificationCenter.default.post(name: update, object: nil)
         navigationController?.popViewController(animated: true)
@@ -39,7 +43,7 @@ class KittenDetailsVC: UIViewController {
     }
 }
 
-extension KittenDetailsVC: QuestionnaireResultDelegate, UITextFieldDelegate {
+extension KittenProfileBuilderVC: QuestionnaireResultDelegate, UITextFieldDelegate {
     
     func calculatedAge(age: Float) {
         kittenAgeTextField.text = String(age)

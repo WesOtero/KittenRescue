@@ -48,7 +48,7 @@ class KittenDashboardVC: UIViewController {
     
     @IBAction func addKitten(_ sender: Any) {
         let thisstoryboard = UIStoryboard(name: "Questionnaire", bundle: Bundle.main)
-        let vc = thisstoryboard.instantiateViewController(identifier: "KittenDetails") as! KittenDetailsVC
+        let vc = thisstoryboard.instantiateViewController(identifier: "KittenDetails") as! KittenProfileBuilderVC
         navigationController?.pushViewController(vc, animated: true)
     }
     
