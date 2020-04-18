@@ -8,18 +8,12 @@
 
 import UIKit
 
-protocol AddKittenDelegate {
-    func addKitten(kitten: Kitten, isNewContentAvailable: Bool)
-}
-
 class KittenDetailsVC: UIViewController {
     
     @IBOutlet weak var kittenImageView: UIImageView!
     @IBOutlet weak var kittenNameTextField: UITextField!
     @IBOutlet weak var kittenAgeTextField: UITextField!
     @IBOutlet weak var kittenSexTextField: UITextField!
-    
-    var addKittenDelegate: AddKittenDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +26,9 @@ class KittenDetailsVC: UIViewController {
     }
     
     @IBAction func registerkitten(_ sender: Any) {
-        let kitten: Kitten = Kitten(name: kittenNameTextField.text!, age: 10.0, sex: kittenSexTextField.text!, weight: 10.0, status: "")
-        addKittenDelegate.addKitten(kitten: kitten, isNewContentAvailable: true)
-      
+        KittenDataOperations.addKitten(name: kittenNameTextField.text!, age: 10.0, sex: "NIL", status: "NIL")
+        let update = Notification.Name(rawValue: newKittenNotificationKey)
+        NotificationCenter.default.post(name: update, object: nil)
         navigationController?.popViewController(animated: true)
     }
     

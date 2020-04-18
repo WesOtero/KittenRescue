@@ -29,6 +29,6 @@ struct Kitten {
     
     mutating func setHungerNotification() {
         self.status = "Hungry"
-        notificationPublisher.sendNotification(uniqueId: "\(name) Hunger Alert", title: "Hunger Alert", subtitle: "\(name) is hungry.", body: "Tap to see feeding details.", badge: 1, delayInterval: 60)
+        notificationPublisher.sendNotification(uniqueId: "\(name) Hunger Alert", title: "Hunger Alert", subtitle: "\(name) is hungry.", body: "Tap to see feeding details.", badge: 1, delayInterval: 10)
     }
 }

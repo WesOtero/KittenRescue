@@ -26,9 +26,7 @@ class DataOperations {
     
     static func getEntity(entityName: String) -> NSEntityDescription {
         let managedContext = managedObjectContext()
-        
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: managedContext!)!
-        
         return entity
     }
     

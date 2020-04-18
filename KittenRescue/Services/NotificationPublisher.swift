@@ -21,7 +21,7 @@ class NotificationPublisher: NSObject {
         var delayTimeTrigger: UNTimeIntervalNotificationTrigger?
         
         if let delayInterval = delayInterval {
-            delayTimeTrigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(delayInterval), repeats: true)
+            delayTimeTrigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(delayInterval), repeats: false)
         }
         
         if let badge = badge {
