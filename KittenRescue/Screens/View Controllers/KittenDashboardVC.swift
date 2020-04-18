@@ -34,15 +34,9 @@ class KittenDashboardVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         kittens = KittenDataOperations.getAllKittens()
-        print("*****************************************")
-        print("Kittens: \(kittens.count)")
-        print(kittens)
-        print("-----------------------------------------")
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
         if kittenIsAdded {
             kittenTableView.beginUpdates()
             indexPath = IndexPath(row: kittens.count - 1 , section: 0)
