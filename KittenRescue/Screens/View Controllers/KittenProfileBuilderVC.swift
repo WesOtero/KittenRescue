@@ -12,6 +12,7 @@ class KittenProfileBuilderVC: UIViewController {
     
     @IBOutlet weak var kittenImageView: UIImageView!
     @IBOutlet weak var kittenNameTextField: UITextField!
+    @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var kittenAgeTextField: UITextField!
     @IBOutlet weak var kittenSexTextField: UITextField!
     
@@ -27,10 +28,11 @@ class KittenProfileBuilderVC: UIViewController {
     
     @IBAction func registerkitten(_ sender: Any) {
         let name = kittenNameTextField.text!
+        let weight = (weightTextField.text! as NSString).floatValue
         let age: Float = (kittenAgeTextField.text! as NSString).floatValue
         let sex = kittenSexTextField.text!
         
-        KittenDataOperations.addKitten(name: name, age: age, sex: sex, status: "NIL")
+        KittenDataOperations.addKitten(name: name, weight: weight, age: age, sex: sex, status: "NIL")
         let update = Notification.Name(rawValue: newKittenNotificationKey)
         NotificationCenter.default.post(name: update, object: nil)
         navigationController?.popViewController(animated: true)

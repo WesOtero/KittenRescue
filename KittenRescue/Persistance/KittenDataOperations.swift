@@ -13,13 +13,14 @@ class KittenDataOperations {
     
     static var kittenList: [Kitten] = []
     
-    static func addKitten(name: String, age: Float, sex: String, status: String) {
+    static func addKitten(name: String, weight: Float, age: Float, sex: String, status: String) {
         let managedObject = DataOperations.getManagedObject(entityName: "KittenModel")
         managedObject.setValue(name, forKey: "name")
+        managedObject.setValue(weight, forKey: "weight")
         managedObject.setValue(age, forKey: "age")
         managedObject.setValue(sex, forKey: "sex")
         managedObject.setValue(status, forKey: "status")
-        kittenList.append(Kitten(name: name, age: age, sex: sex, weight: 10.0, status: status))
+        kittenList.append(Kitten(name: name, age: age, sex: sex, weight: weight, status: status))
         DataOperations.saveData()
         print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
         print(KittenDataOperations.kittenList)
@@ -40,17 +41,15 @@ class KittenDataOperations {
             
             for data in result as! [NSManagedObject] {
                 let name = data.value(forKey: "name") as! String
+                let weight = data.value(forKey: "weight") as! Float
                 let age = data.value(forKey: "age") as! Float
                 let status = data.value(forKey: "status") as! String
                 let sex = data.value(forKey: "sex") as! String
                 
-                let kittenObject = Kitten(name: name, age: age, sex: sex, weight: 10.0, status: status)
+                let kittenObject = Kitten(name: name, age: age, sex: sex, weight: weight, status: status)
                 
                 kittens.append(kittenObject)
             }
-            
-            
-            
         } catch {
             print("Unable to fetch Kitten Data.")
         }

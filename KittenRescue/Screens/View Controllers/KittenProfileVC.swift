@@ -14,8 +14,7 @@ class KittenProfileVC: UIViewController {
     @IBOutlet weak var kittenAgeLabel: UILabel!
     @IBOutlet weak var kittenSexLabel: UILabel!
     @IBOutlet weak var kittenWeightLabel: UILabel!
-    @IBOutlet weak var kittenStatusLabel: UILabel!
-    
+   
     var kitten: Kitten = Kitten(name: "", age: 0, sex: "M", weight: 0.0, status: "")
     
     override func viewDidLoad() {
@@ -25,10 +24,9 @@ class KittenProfileVC: UIViewController {
     
     func setupKittenProfile() {
         kittenNameLabel.text = kitten.name
-        kittenAgeLabel.text = "Age: " + String(kitten.age)
+        kittenAgeLabel.text = String(kitten.age) + " Weeks"
         kittenSexLabel.text = "Sex: " + kitten.sex
-        kittenWeightLabel.text = "Weight: " + String(kitten.weight)
-        kittenStatusLabel.text = "Status: " + kitten.status
+        kittenWeightLabel.text = String(kitten.weight) + "Lbs"
     }
 }
 

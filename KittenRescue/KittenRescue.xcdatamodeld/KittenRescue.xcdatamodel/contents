@@ -5,6 +5,7 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="sex" optional="YES" attributeType="String"/>
         <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
     <entity name="NotificationModel" representedClassName="NotificationModel" syncable="YES" codeGenerationType="class">
         <attribute name="requirement" optional="YES" attributeType="String"/>
@@ -12,7 +13,7 @@
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="KittenModel" positionX="-54" positionY="-9" width="128" height="103"/>
+        <element name="KittenModel" positionX="-54" positionY="-9" width="128" height="118"/>
         <element name="NotificationModel" positionX="-36" positionY="9" width="128" height="88"/>
     </elements>
 </model>

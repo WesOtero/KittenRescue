@@ -28,8 +28,7 @@ extension NotificationsDashboardVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = notificationTableView.dequeueReusableCell(withIdentifier: "NotificationCell") as! NotificationTableViewCell
-        
+        let cell = notificationTableView.dequeueReusableCell(withIdentifier: "NotificationCell") as! NotificationTableViewCell        
         cell.notificationNameLabel.text = notifications[indexPath.row].name
         cell.notificationRequirementLabel.text = notifications[indexPath.row].requirement
         cell.notificationStatusLabel.text = notifications[indexPath.row].status

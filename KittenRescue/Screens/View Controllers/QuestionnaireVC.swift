@@ -22,7 +22,7 @@ class QuestionnaireVC: UIViewController {
     
     @IBOutlet weak var choiceOneButton: UIButton!
     @IBOutlet weak var choiceTwoButton: UIButton!
-    
+
     var ageDelegate: QuestionnaireResultDelegate!
     
     var currentQuestion: Int = 0
@@ -38,7 +38,6 @@ class QuestionnaireVC: UIViewController {
         arePreviousAndSubmitButtonDisplayed()
         traverseQuestionnaire()
     }
-    
     
     @IBAction func submitButton(_ sender: Any) {
         ageDelegate.calculatedAge(age: 10.0)
@@ -89,6 +88,4 @@ class QuestionnaireVC: UIViewController {
             selectionList.append(0)
         }
     }
-    
-    
 }
