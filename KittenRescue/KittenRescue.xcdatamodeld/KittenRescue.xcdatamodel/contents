@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppNotificationModel" representedClassName="AppNotificationModel" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="kitten" optional="YES" attributeType="String"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="KittenAppNotificationModel" representedClassName="KittenAppNotificationModel" syncable="YES" codeGenerationType="class">
+        <attribute name="appNotificationId" optional="YES" attributeType="String"/>
+        <attribute name="kittenName" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="KittenModel" representedClassName="KittenModel" syncable="YES" codeGenerationType="class">
         <attribute name="age" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="kitten" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="sex" optional="YES" attributeType="String"/>
         <attribute name="status" optional="YES" attributeType="String"/>
         <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
-    <entity name="NotificationModel" representedClassName="NotificationModel" syncable="YES" codeGenerationType="class">
-        <attribute name="requirement" optional="YES" attributeType="String"/>
-        <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="title" optional="YES" attributeType="String"/>
-    </entity>
     <elements>
-        <element name="KittenModel" positionX="-54" positionY="-9" width="128" height="118"/>
-        <element name="NotificationModel" positionX="-36" positionY="9" width="128" height="88"/>
+        <element name="AppNotificationModel" positionX="-54" positionY="27" width="128" height="118"/>
+        <element name="KittenAppNotificationModel" positionX="-54" positionY="36" width="128" height="73"/>
+        <element name="KittenModel" positionX="-54" positionY="-9" width="128" height="133"/>
     </elements>
 </model>

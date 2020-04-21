@@ -33,8 +33,16 @@ class KittenProfileBuilderVC: UIViewController {
         let sex = kittenSexTextField.text!
         
         KittenDataOperations.addKitten(name: name, weight: weight, age: age, sex: sex, status: "NIL")
-        let update = Notification.Name(rawValue: newKittenNotificationKey)
-        NotificationCenter.default.post(name: update, object: nil)
+        
+        //Sets a local notification
+        NotificationService.shared.setKittenNotifications(kitten: Kitten(name: name, age: age, sex: sex, weight: weight, status: "Hungry"))
+        
+        // Notifies Other view about the kitten being added
+        let kittenUpdate = Notification.Name(rawValue: newKittenNotificationKey)
+        NotificationCenter.default.post(name: kittenUpdate, object: nil)
+        let notificationUpdate = Notification.Name(rawValue: newNotificationAppNotificationkey)
+        NotificationCenter.default.post(name: notificationUpdate, object: nil)
+        
         navigationController?.popViewController(animated: true)
     }
     

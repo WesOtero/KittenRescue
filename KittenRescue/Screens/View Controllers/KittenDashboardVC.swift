@@ -13,6 +13,7 @@ let newKittenNotificationKey = "net.wesleyotero.newKitten"
 class KittenDashboardVC: UIViewController {
     
     let newKitten = Notification.Name(rawValue: newKittenNotificationKey)
+    
     var kittenIsAdded = false
 
     var indexPath: IndexPath!

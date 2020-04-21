@@ -11,17 +11,19 @@ import UserNotifications
 
 class NotificationPublisher: NSObject {
     
-    func sendNotification(uniqueId: String, title: String, subtitle: String, body: String, badge: Int?, delayInterval: Int?) {
+    func sendNotification(uniqueId: String, title: String, subtitle: String, body: String, badge: Int?, delayInterval: Int?, repeats: Bool) {
         
         let notificationContent = UNMutableNotificationContent()
         notificationContent.title = title
         notificationContent.subtitle = subtitle
         notificationContent.body = body
         
+//        saveNotification(uniqueId: uniqueId, title: title, message: body, status: "Pending")
+//
         var delayTimeTrigger: UNTimeIntervalNotificationTrigger?
         
         if let delayInterval = delayInterval {
-            delayTimeTrigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(delayInterval), repeats: false)
+            delayTimeTrigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(delayInterval), repeats: repeats)
         }
         
         if let badge = badge {
@@ -41,9 +43,15 @@ class NotificationPublisher: NSObject {
                 print(error.localizedDescription)
             }
         }
-        
     }
     
+    func dismissNotification(notificationId: String) {
+        UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: [notificationId])
+    }
+    
+//    func saveNotification(uniqueId: String, title: String, message: String, status: String, kitten: String) {
+//        NotificationsDataOperations.addNotification(id: uniqueId, title: title, message: message, status: status, kitten: kitten)
+//    }
 }
 
 extension NotificationPublisher: UNUserNotificationCenterDelegate {
@@ -69,6 +77,4 @@ extension NotificationPublisher: UNUserNotificationCenterDelegate {
             completionHandler()
         }
     }
-    
-    
 }

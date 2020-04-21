@@ -25,8 +25,8 @@ class KittenProfileVC: UIViewController {
     func setupKittenProfile() {
         kittenNameLabel.text = kitten.name
         kittenAgeLabel.text = String(kitten.age) + " Weeks"
-        kittenSexLabel.text = "Sex: " + kitten.sex
-        kittenWeightLabel.text = String(kitten.weight) + "Lbs"
+        kittenSexLabel.text = kitten.sex
+        kittenWeightLabel.text = String(kitten.weight) + " Lbs"
     }
 }
 

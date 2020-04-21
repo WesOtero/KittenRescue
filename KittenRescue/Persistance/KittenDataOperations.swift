@@ -22,18 +22,25 @@ class KittenDataOperations {
         managedObject.setValue(status, forKey: "status")
         kittenList.append(Kitten(name: name, age: age, sex: sex, weight: weight, status: status))
         DataOperations.saveData()
-        print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
-        print(KittenDataOperations.kittenList)
-        print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
     }
     
-    func getKitten() {
+    func getKitten(kittenName: String) -> Kitten? {
         
+        let kittens = KittenDataOperations.getAllKittens()
+        
+        for kitten in kittens {
+            if kitten.name == kittenName {
+                return kitten
+            }
+        }
+        
+        return nil
     }
     
     static func getAllKittens() -> [Kitten] {
         let managedObject = DataOperations.managedObjectContext()
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "KittenModel")
+        
         var kittens: [Kitten] = []
         do {
             

@@ -7,9 +7,9 @@
 //
 
 struct Notifications {
-    
-    var name: String
-    var requirement: String
+    var id: String
+    var title: String
+    var message: String
     var status: String
-    
+    var kitten: String
 }
