@@ -24,7 +24,7 @@ class KittenDataOperations {
         DataOperations.saveData()
     }
     
-    func getKitten(kittenName: String) -> Kitten? {
+    static func getKitten(kittenName: String) -> Kitten? {
         
         let kittens = KittenDataOperations.getAllKittens()
         

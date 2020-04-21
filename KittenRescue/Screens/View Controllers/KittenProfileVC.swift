@@ -15,7 +15,7 @@ class KittenProfileVC: UIViewController {
     @IBOutlet weak var kittenSexLabel: UILabel!
     @IBOutlet weak var kittenWeightLabel: UILabel!
    
-    var kitten: Kitten = Kitten(name: "", age: 0, sex: "M", weight: 0.0, status: "")
+    var kitten: Kitten!
     
     override func viewDidLoad() {
         super.viewDidLoad()

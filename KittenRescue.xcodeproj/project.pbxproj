@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E217A882444FE8F0000AD90 /* QuestionnaireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E217A872444FE8F0000AD90 /* QuestionnaireVC.swift */; };
 		2E217A8B2444FECC0000AD90 /* Questionnaire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E217A892444FECC0000AD90 /* Questionnaire.storyboard */; };
-		2E4DD6532447997D007F9709 /* KittenProfileBuilderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4DD6522447997D007F9709 /* KittenProfileBuilderVC.swift */; };
+		2E4DD6532447997D007F9709 /* KittenProfileScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4DD6522447997D007F9709 /* KittenProfileScreenVC.swift */; };
 		2E4F1FC8244369E80041465A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FC7244369E80041465A /* AppDelegate.swift */; };
 		2E4F1FCA244369E80041465A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FC9244369E80041465A /* SceneDelegate.swift */; };
 		2E4F1FCF244369E80041465A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4F1FCD244369E80041465A /* Main.storyboard */; };
@@ -37,6 +37,7 @@
 		2ECFF1D52443AA67006B7057 /* NotificationsDashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECFF1D42443AA67006B7057 /* NotificationsDashboard.storyboard */; };
 		2ECFF1D72443AD16006B7057 /* KittenDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECFF1D62443AD16006B7057 /* KittenDashboardVC.swift */; };
 		2ECFF1D92443AD33006B7057 /* NotificationsDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECFF1D82443AD33006B7057 /* NotificationsDashboardVC.swift */; };
+		2EF71C80244E722F00C2DB18 /* NotificationScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF71C7F244E722F00C2DB18 /* NotificationScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +60,7 @@
 /* Begin PBXFileReference section */
 		2E217A872444FE8F0000AD90 /* QuestionnaireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireVC.swift; sourceTree = "<group>"; };
 		2E217A8A2444FECC0000AD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KittenRescue/Screens/Storyboards/KittenRescue/Screens/Storyboards/Base.lproj/Questionnaire.storyboard; sourceTree = "<group>"; };
-		2E4DD6522447997D007F9709 /* KittenProfileBuilderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenProfileBuilderVC.swift; sourceTree = "<group>"; };
+		2E4DD6522447997D007F9709 /* KittenProfileScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenProfileScreenVC.swift; sourceTree = "<group>"; };
 		2E4F1FC4244369E80041465A /* KittenRescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KittenRescue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4F1FC7244369E80041465A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E4F1FC9244369E80041465A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		2ECFF1D42443AA67006B7057 /* NotificationsDashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotificationsDashboard.storyboard; sourceTree = "<group>"; };
 		2ECFF1D62443AD16006B7057 /* KittenDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenDashboardVC.swift; sourceTree = "<group>"; };
 		2ECFF1D82443AD33006B7057 /* NotificationsDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsDashboardVC.swift; sourceTree = "<group>"; };
+		2EF71C7F244E722F00C2DB18 /* NotificationScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,9 +208,10 @@
 			children = (
 				2E9A5148244923B60059DE93 /* MainVC.swift */,
 				2ECFF1D62443AD16006B7057 /* KittenDashboardVC.swift */,
-				2E4DD6522447997D007F9709 /* KittenProfileBuilderVC.swift */,
+				2E4DD6522447997D007F9709 /* KittenProfileScreenVC.swift */,
 				2E8742A42443CC2600190AAA /* KittenProfileVC.swift */,
 				2ECFF1D82443AD33006B7057 /* NotificationsDashboardVC.swift */,
+				2EF71C7F244E722F00C2DB18 /* NotificationScreenVC.swift */,
 				2E217A872444FE8F0000AD90 /* QuestionnaireVC.swift */,
 			);
 			path = "View Controllers";
@@ -403,10 +406,11 @@
 				2E217A882444FE8F0000AD90 /* QuestionnaireVC.swift in Sources */,
 				2E9CFC9B2444B29700057429 /* ErrorMessages.swift in Sources */,
 				2E8742A32443C4EF00190AAA /* CellCardView.swift in Sources */,
-				2E4DD6532447997D007F9709 /* KittenProfileBuilderVC.swift in Sources */,
+				2E4DD6532447997D007F9709 /* KittenProfileScreenVC.swift in Sources */,
 				2EC8DB1424496E5100DC0C5C /* NotificationDataOperations.swift in Sources */,
 				2E9E7BF72443AFB2007B9832 /* NotificationTableViewCell.swift in Sources */,
 				2E9A514B244928400059DE93 /* NotificationPublisher.swift in Sources */,
+				2EF71C80244E722F00C2DB18 /* NotificationScreenVC.swift in Sources */,
 				2E4F1FC8244369E80041465A /* AppDelegate.swift in Sources */,
 				2E9E7BFC2443BB02007B9832 /* Notification.swift in Sources */,
 				2E934F182444CE6E00322D26 /* Question.swift in Sources */,

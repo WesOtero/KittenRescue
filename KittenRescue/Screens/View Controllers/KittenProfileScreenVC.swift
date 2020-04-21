@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KittenProfileBuilderVC: UIViewController {
+class KittenProfileScreenVC: UIViewController {
     
     @IBOutlet weak var kittenImageView: UIImageView!
     @IBOutlet weak var kittenNameTextField: UITextField!
@@ -53,7 +53,7 @@ class KittenProfileBuilderVC: UIViewController {
     }
 }
 
-extension KittenProfileBuilderVC: QuestionnaireResultDelegate, UITextFieldDelegate {
+extension KittenProfileScreenVC: QuestionnaireResultDelegate, UITextFieldDelegate {
     
     func calculatedAge(age: Float) {
         kittenAgeTextField.text = String(age)

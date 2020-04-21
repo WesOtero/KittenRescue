@@ -49,7 +49,7 @@ class KittenDashboardVC: UIViewController {
     
     @IBAction func addKitten(_ sender: Any) {
         let thisstoryboard = UIStoryboard(name: "Questionnaire", bundle: Bundle.main)
-        let vc = thisstoryboard.instantiateViewController(identifier: "KittenDetails") as! KittenProfileBuilderVC
+        let vc = thisstoryboard.instantiateViewController(identifier: "KittenDetails") as! KittenProfileScreenVC
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -70,9 +70,11 @@ extension KittenDashboardVC: UITableViewDelegate,  UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "KittenCell") as! KittenTableViewCell
+        
         cell.kittenNameLabel.text = kittens[indexPath.row].name
         cell.kittenAgeLabel.text = String(kittens[indexPath.row].age)
         cell.kittenStatusLabel.text = kittens[indexPath.row].status
+        
         return cell
     }
     

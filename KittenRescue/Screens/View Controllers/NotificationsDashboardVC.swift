@@ -51,11 +51,8 @@ class NotificationsDashboardVC: UIViewController {
     }
     
     @objc func updateAppNotificationList(notification: NSNotification) {
-        print(appNotificationAdded)
         appNotificationAdded = true
-        print(appNotificationAdded)
     }
-    
 }
 
 extension NotificationsDashboardVC: UITableViewDelegate, UITableViewDataSource {
@@ -71,6 +68,15 @@ extension NotificationsDashboardVC: UITableViewDelegate, UITableViewDataSource {
         cell.notificationStatusLabel.text = notifications[indexPath.row].status
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Heyy")
+        let indexPath = tableView.indexPathForSelectedRow!
+        let notificationScreenVC = storyboard?.instantiateViewController(identifier: "Notification") as! NotificationScreenVC
+        notificationScreenVC.notification = notifications[indexPath.row]
+        
+        present(notificationScreenVC, animated: true, completion: nil)
     }
     
     
