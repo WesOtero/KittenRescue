@@ -9,6 +9,6 @@
 struct Question {
     var questionId: Int
     var question: String
-    var userSelection: String
+    var userSelection: Int
     var answers: [String]
 }

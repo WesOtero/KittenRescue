@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1A0CE22450A3CA00565F05 /* ResultMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1A0CE12450A3CA00565F05 /* ResultMessage.swift */; };
 		2E217A882444FE8F0000AD90 /* QuestionnaireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E217A872444FE8F0000AD90 /* QuestionnaireVC.swift */; };
 		2E217A8B2444FECC0000AD90 /* Questionnaire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E217A892444FECC0000AD90 /* Questionnaire.storyboard */; };
+		2E42E4B8244EA62200EFFA90 /* AgeCalculationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42E4B7244EA62200EFFA90 /* AgeCalculationService.swift */; };
 		2E4DD6532447997D007F9709 /* KittenProfileScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4DD6522447997D007F9709 /* KittenProfileScreenVC.swift */; };
 		2E4F1FC8244369E80041465A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FC7244369E80041465A /* AppDelegate.swift */; };
 		2E4F1FCA244369E80041465A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FC9244369E80041465A /* SceneDelegate.swift */; };
@@ -58,8 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E1A0CE12450A3CA00565F05 /* ResultMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMessage.swift; sourceTree = "<group>"; };
 		2E217A872444FE8F0000AD90 /* QuestionnaireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireVC.swift; sourceTree = "<group>"; };
 		2E217A8A2444FECC0000AD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KittenRescue/Screens/Storyboards/KittenRescue/Screens/Storyboards/Base.lproj/Questionnaire.storyboard; sourceTree = "<group>"; };
+		2E42E4B7244EA62200EFFA90 /* AgeCalculationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCalculationService.swift; sourceTree = "<group>"; };
 		2E4DD6522447997D007F9709 /* KittenProfileScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenProfileScreenVC.swift; sourceTree = "<group>"; };
 		2E4F1FC4244369E80041465A /* KittenRescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KittenRescue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4F1FC7244369E80041465A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				2E9CFC9A2444B29700057429 /* ErrorMessages.swift */,
+				2E1A0CE12450A3CA00565F05 /* ResultMessage.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 			children = (
 				2E934F1A2444D22F00322D26 /* NotificationService.swift */,
 				2E9A514A244928400059DE93 /* NotificationPublisher.swift */,
+				2E42E4B7244EA62200EFFA90 /* AgeCalculationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -406,6 +412,7 @@
 				2E217A882444FE8F0000AD90 /* QuestionnaireVC.swift in Sources */,
 				2E9CFC9B2444B29700057429 /* ErrorMessages.swift in Sources */,
 				2E8742A32443C4EF00190AAA /* CellCardView.swift in Sources */,
+				2E42E4B8244EA62200EFFA90 /* AgeCalculationService.swift in Sources */,
 				2E4DD6532447997D007F9709 /* KittenProfileScreenVC.swift in Sources */,
 				2EC8DB1424496E5100DC0C5C /* NotificationDataOperations.swift in Sources */,
 				2E9E7BF72443AFB2007B9832 /* NotificationTableViewCell.swift in Sources */,
@@ -413,6 +420,7 @@
 				2EF71C80244E722F00C2DB18 /* NotificationScreenVC.swift in Sources */,
 				2E4F1FC8244369E80041465A /* AppDelegate.swift in Sources */,
 				2E9E7BFC2443BB02007B9832 /* Notification.swift in Sources */,
+				2E1A0CE22450A3CA00565F05 /* ResultMessage.swift in Sources */,
 				2E934F182444CE6E00322D26 /* Question.swift in Sources */,
 				2E4F1FCA244369E80041465A /* SceneDelegate.swift in Sources */,
 				2E9E7BF52443AF9A007B9832 /* KittenTableViewCell.swift in Sources */,
