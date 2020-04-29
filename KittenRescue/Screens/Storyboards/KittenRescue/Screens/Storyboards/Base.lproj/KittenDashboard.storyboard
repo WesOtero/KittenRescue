@@ -56,8 +56,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EMN-PS-LIH">
-                                                            <rect key="frame" x="10" y="11.5" width="90" height="87"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-cat-profile-100" translatesAutoresizingMaskIntoConstraints="NO" id="EMN-PS-LIH">
+                                                            <rect key="frame" x="10" y="10" width="90" height="90"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="90" id="GBM-9e-C8J"/>
                                                                 <constraint firstAttribute="width" constant="90" id="hnY-9v-Qje"/>
@@ -126,7 +126,7 @@
         <scene sceneID="lVm-N4-d1t">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gaE-cF-JZM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Kittens" id="heB-sW-UB2"/>
+                    <tabBarItem key="tabBarItem" title="Kittens" image="person.fill" catalog="system" id="heB-sW-UB2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="eoz-3D-nfv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
@@ -156,8 +156,8 @@
                                         <rect key="frame" x="337" y="8" width="30" height="30"/>
                                         <state key="normal" title="Edit"/>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MWt-eH-2LI">
-                                        <rect key="frame" x="137.5" y="30.5" width="100" height="99"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-cat-profile-100" translatesAutoresizingMaskIntoConstraints="NO" id="MWt-eH-2LI">
+                                        <rect key="frame" x="137.5" y="30" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="IfT-aM-g7H"/>
                                             <constraint firstAttribute="height" constant="100" id="sII-Xm-536"/>
@@ -176,28 +176,28 @@
                                         <rect key="frame" x="85" y="167" width="205" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3g-38-RGs">
-                                                <rect key="frame" x="0.0" y="8.5" width="40" height="39"/>
+                                                <rect key="frame" x="0.0" y="8" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="Gmw-rD-k6K"/>
                                                     <constraint firstAttribute="height" constant="40" id="tmb-r7-OM4"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="pencil.circle" catalog="system"/>
+                                                <state key="normal" backgroundImage="icons8-tin-can-96"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVQ-RB-bF1">
-                                                <rect key="frame" x="82.5" y="8.5" width="40" height="39"/>
+                                                <rect key="frame" x="82.5" y="8" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="Oxa-p4-U0f"/>
                                                     <constraint firstAttribute="height" constant="40" id="mki-MG-lfA"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="pencil.circle" catalog="system"/>
+                                                <state key="normal" backgroundImage="icons8-clew-128"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNs-xL-5rc">
-                                                <rect key="frame" x="165" y="8.5" width="40" height="39"/>
+                                                <rect key="frame" x="165" y="8" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="QcY-MB-3x4"/>
                                                     <constraint firstAttribute="width" constant="40" id="ddx-iD-oK5"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="pencil.circle" catalog="system"/>
+                                                <state key="normal" backgroundImage="icons8-cat-footprint-128"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -354,8 +354,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pencil.circle" catalog="system" width="128" height="121"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="icons8-cat-footprint-128" width="128" height="128"/>
+        <image name="icons8-cat-profile-100" width="100" height="100"/>
+        <image name="icons8-clew-128" width="128" height="128"/>
+        <image name="icons8-tin-can-96" width="96" height="96"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
     </resources>

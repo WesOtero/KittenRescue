@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KittenProfileScreenVC: UIViewController {
+class KittenProfileBuilderVC: UIViewController {
     
     @IBOutlet weak var kittenImageView: UIImageView!
     @IBOutlet weak var kittenNameTextField: UITextField!
@@ -21,7 +21,8 @@ class KittenProfileScreenVC: UIViewController {
     }
     
     @IBAction func beginQuestionnaire(_ sender: Any) {
-        let questionnaireScreen = storyboard?.instantiateViewController(identifier: "Questionnaire") as! QuestionnaireVC
+        let storyboard = UIStoryboard(name: "Questionnaire", bundle: Bundle.main)
+        let questionnaireScreen = storyboard.instantiateViewController(identifier: "Questionnaire") as! QuestionnaireVC
         questionnaireScreen.ageDelegate = self
         present(questionnaireScreen, animated: true, completion: nil)
     }
@@ -53,7 +54,7 @@ class KittenProfileScreenVC: UIViewController {
     }
 }
 
-extension KittenProfileScreenVC: QuestionnaireResultDelegate, UITextFieldDelegate {
+extension KittenProfileBuilderVC: QuestionnaireResultDelegate, UITextFieldDelegate {
     
     func calculatedAge(age: Float) {
         kittenAgeTextField.text = String(age)

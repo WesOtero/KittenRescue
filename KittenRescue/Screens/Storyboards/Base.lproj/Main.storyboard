@@ -30,7 +30,7 @@
         <scene sceneID="ax2-4L-M9U">
             <objects>
                 <viewControllerPlaceholder storyboardName="KittenDashboard" id="Dvp-vP-gOW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="tAM-Pr-dhd"/>
+                    <tabBarItem key="tabBarItem" title="X" image="person.circle" catalog="system" id="tAM-Pr-dhd"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZR-fB-cHw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,11 +40,15 @@
         <scene sceneID="Aam-4u-Hyh">
             <objects>
                 <viewControllerPlaceholder storyboardName="NotificationsDashboard" id="FrH-OM-BNL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6L2-HE-jGZ"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="bell.fill" catalog="system" id="6L2-HE-jGZ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCN-If-6R5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2142" y="531"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bell.fill" catalog="system" width="128" height="124"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

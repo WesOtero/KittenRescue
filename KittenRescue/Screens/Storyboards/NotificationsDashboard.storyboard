@@ -111,7 +111,7 @@
         <scene sceneID="qGc-me-fZI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Upa-Fi-3mm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notifications" id="5l3-cA-dce"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="bell" catalog="system" id="5l3-cA-dce"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="yb0-zO-s1i">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -190,7 +190,7 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="300" id="jGB-J1-4fh"/>
                                                                 </constraints>
-                                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -265,6 +265,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bell" catalog="system" width="128" height="124"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>

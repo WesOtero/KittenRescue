@@ -1,120 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vOb-k3-zQS">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Kitten Profile ScreenVC-->
-        <scene sceneID="BEj-9m-FJM">
-            <objects>
-                <viewController storyboardIdentifier="KittenDetails" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vOb-k3-zQS" customClass="KittenProfileScreenVC" customModule="KittenRescue" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8u4-lr-eum">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VTb-kf-IJ5">
-                                <rect key="frame" x="144.5" y="49.5" width="125" height="124"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="N2u-cJ-WbL"/>
-                                    <constraint firstAttribute="width" constant="125" id="rXx-Vz-WYb"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mix-FM-Fiy">
-                                <rect key="frame" x="50" y="802" width="314" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="XXc-Sr-exC"/>
-                                </constraints>
-                                <state key="normal" title="Add Kitten"/>
-                                <connections>
-                                    <action selector="registerkitten:" destination="vOb-k3-zQS" eventType="touchUpInside" id="Jpq-xt-OhL"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6oN-jZ-5SD">
-                                <rect key="frame" x="50" y="194" width="314" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lbC-TU-MFp">
-                                <rect key="frame" x="50" y="323" width="314" height="65"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age*" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jvR-9b-2Jx">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="sDj-i7-aRL"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAJ-1i-bQw">
-                                        <rect key="frame" x="0.0" y="35" width="314" height="30"/>
-                                        <state key="normal" title="Calculate Age"/>
-                                        <connections>
-                                            <action selector="beginQuestionnaire:" destination="vOb-k3-zQS" eventType="touchUpInside" id="hr5-qf-4UL"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sex" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8eh-ux-p3s">
-                                <rect key="frame" x="50" y="408" width="314" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="qdW-QH-atU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HS4-p9-R9E">
-                                <rect key="frame" x="50" y="258" width="314" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="sGH-Vk-Agq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="HS4-p9-R9E" firstAttribute="leading" secondItem="0yW-0h-QL3" secondAttribute="leading" constant="50" id="2KW-kB-zzX"/>
-                            <constraint firstItem="VTb-kf-IJ5" firstAttribute="top" secondItem="0yW-0h-QL3" secondAttribute="top" constant="5" id="3vT-e0-Kuy"/>
-                            <constraint firstItem="8eh-ux-p3s" firstAttribute="leading" secondItem="0yW-0h-QL3" secondAttribute="leading" constant="50" id="522-oh-k5D"/>
-                            <constraint firstItem="0yW-0h-QL3" firstAttribute="trailing" secondItem="Mix-FM-Fiy" secondAttribute="trailing" constant="50" id="8SO-r5-BU3"/>
-                            <constraint firstItem="VTb-kf-IJ5" firstAttribute="centerX" secondItem="8u4-lr-eum" secondAttribute="centerX" id="AIW-jd-385"/>
-                            <constraint firstItem="0yW-0h-QL3" firstAttribute="trailing" secondItem="HS4-p9-R9E" secondAttribute="trailing" constant="50" id="AS0-2t-M6R"/>
-                            <constraint firstItem="6oN-jZ-5SD" firstAttribute="top" secondItem="VTb-kf-IJ5" secondAttribute="bottom" constant="20" id="FSq-K1-B6Y"/>
-                            <constraint firstItem="lbC-TU-MFp" firstAttribute="leading" secondItem="0yW-0h-QL3" secondAttribute="leading" constant="50" id="Fp8-My-gYw"/>
-                            <constraint firstItem="HS4-p9-R9E" firstAttribute="top" secondItem="6oN-jZ-5SD" secondAttribute="bottom" constant="30" id="Rj3-g0-F0Q"/>
-                            <constraint firstItem="0yW-0h-QL3" firstAttribute="trailing" secondItem="8eh-ux-p3s" secondAttribute="trailing" constant="50" id="V3n-HB-dxL"/>
-                            <constraint firstItem="0yW-0h-QL3" firstAttribute="bottom" secondItem="Mix-FM-Fiy" secondAttribute="bottom" constant="15" id="X8l-kc-vnc"/>
-                            <constraint firstItem="0yW-0h-QL3" firstAttribute="trailing" secondItem="6oN-jZ-5SD" secondAttribute="trailing" constant="50" id="chY-q7-edk"/>
-                            <constraint firstItem="Mix-FM-Fiy" firstAttribute="leading" secondItem="0yW-0h-QL3" secondAttribute="leading" constant="50" id="gzB-mc-Xlg"/>
-                            <constraint firstItem="0yW-0h-QL3" firstAttribute="trailing" secondItem="lbC-TU-MFp" secondAttribute="trailing" constant="50" id="iYD-3P-Ja3"/>
-                            <constraint firstItem="8eh-ux-p3s" firstAttribute="top" secondItem="lbC-TU-MFp" secondAttribute="bottom" constant="20" id="vqH-6Y-DxR"/>
-                            <constraint firstItem="6oN-jZ-5SD" firstAttribute="leading" secondItem="0yW-0h-QL3" secondAttribute="leading" constant="50" id="x7F-1g-zce"/>
-                            <constraint firstItem="lbC-TU-MFp" firstAttribute="top" secondItem="HS4-p9-R9E" secondAttribute="bottom" constant="30" id="z7j-3t-WRT"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="0yW-0h-QL3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="HFl-mn-W5O"/>
-                    <connections>
-                        <outlet property="kittenAgeTextField" destination="jvR-9b-2Jx" id="5CL-E3-kiv"/>
-                        <outlet property="kittenImageView" destination="VTb-kf-IJ5" id="X1c-Ya-s1i"/>
-                        <outlet property="kittenNameTextField" destination="6oN-jZ-5SD" id="RD1-3g-c5l"/>
-                        <outlet property="kittenSexTextField" destination="8eh-ux-p3s" id="NVZ-t5-ZmV"/>
-                        <outlet property="weightTextField" destination="HS4-p9-R9E" id="rck-9l-BTe"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RCf-v5-nvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2223.1999999999998" y="162.3688155922039"/>
-        </scene>
         <!--Add Kitten-->
         <scene sceneID="vPf-g8-eGT">
             <objects>
                 <viewController storyboardIdentifier="Questionnaire" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4fi-No-7Po" customClass="QuestionnaireVC" customModule="KittenRescue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VgW-7O-uQy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Prompt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A49-tB-7bq">
@@ -143,7 +40,7 @@
                                     <action selector="choiceSelected:" destination="4fi-No-7Po" eventType="touchUpInside" id="eFR-GL-8ZE"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="scg-4W-FLf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-cat-profile-100" translatesAutoresizingMaskIntoConstraints="NO" id="scg-4W-FLf">
                                 <rect key="frame" x="172" y="316" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Fye-iC-aWP"/>
@@ -201,7 +98,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="doc" catalog="system" width="115" height="128"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="icons8-cat-profile-100" width="100" height="100"/>
     </resources>
 </document>

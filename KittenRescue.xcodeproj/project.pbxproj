@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		2E1A0CE22450A3CA00565F05 /* ResultMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1A0CE12450A3CA00565F05 /* ResultMessage.swift */; };
 		2E217A882444FE8F0000AD90 /* QuestionnaireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E217A872444FE8F0000AD90 /* QuestionnaireVC.swift */; };
-		2E217A8B2444FECC0000AD90 /* Questionnaire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E217A892444FECC0000AD90 /* Questionnaire.storyboard */; };
+		2E217A8B2444FECC0000AD90 /* KittenProfileBuilder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E217A892444FECC0000AD90 /* KittenProfileBuilder.storyboard */; };
 		2E42E4B8244EA62200EFFA90 /* AgeCalculationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E42E4B7244EA62200EFFA90 /* AgeCalculationService.swift */; };
-		2E4DD6532447997D007F9709 /* KittenProfileScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4DD6522447997D007F9709 /* KittenProfileScreenVC.swift */; };
+		2E4DD6532447997D007F9709 /* KittenProfileBuilderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4DD6522447997D007F9709 /* KittenProfileBuilderVC.swift */; };
 		2E4F1FC8244369E80041465A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FC7244369E80041465A /* AppDelegate.swift */; };
 		2E4F1FCA244369E80041465A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FC9244369E80041465A /* SceneDelegate.swift */; };
 		2E4F1FCF244369E80041465A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4F1FCD244369E80041465A /* Main.storyboard */; };
@@ -22,6 +22,7 @@
 		2E4F1FED244369EA0041465A /* KittenRescueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FEC244369EA0041465A /* KittenRescueUITests.swift */; };
 		2E5DE0802458E9A1000D8961 /* KRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5DE07F2458E9A1000D8961 /* KRButton.swift */; };
 		2E5DE08324591B82000D8961 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5DE08224591B82000D8961 /* UIViewExtension.swift */; };
+		2E5DE0862459DC67000D8961 /* Questionnaire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5DE0842459DC67000D8961 /* Questionnaire.storyboard */; };
 		2E8742A32443C4EF00190AAA /* CellCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8742A22443C4EF00190AAA /* CellCardView.swift */; };
 		2E8742A52443CC2600190AAA /* KittenProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8742A42443CC2600190AAA /* KittenProfileVC.swift */; };
 		2E934F182444CE6E00322D26 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E934F172444CE6E00322D26 /* Question.swift */; };
@@ -29,7 +30,7 @@
 		2E9A5149244923B60059DE93 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A5148244923B60059DE93 /* MainVC.swift */; };
 		2E9A514B244928400059DE93 /* NotificationPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9A514A244928400059DE93 /* NotificationPublisher.swift */; };
 		2E9CFC992444B21C00057429 /* QuestionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CFC982444B21C00057429 /* QuestionList.swift */; };
-		2E9CFC9B2444B29700057429 /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CFC9A2444B29700057429 /* ErrorMessages.swift */; };
+		2E9CFC9B2444B29700057429 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CFC9A2444B29700057429 /* ErrorMessage.swift */; };
 		2E9E7BF52443AF9A007B9832 /* KittenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7BF42443AF9A007B9832 /* KittenTableViewCell.swift */; };
 		2E9E7BF72443AFB2007B9832 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7BF62443AFB2007B9832 /* NotificationTableViewCell.swift */; };
 		2E9E7BFA2443BAF3007B9832 /* Kitten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E7BF92443BAF3007B9832 /* Kitten.swift */; };
@@ -64,9 +65,9 @@
 /* Begin PBXFileReference section */
 		2E1A0CE12450A3CA00565F05 /* ResultMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMessage.swift; sourceTree = "<group>"; };
 		2E217A872444FE8F0000AD90 /* QuestionnaireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireVC.swift; sourceTree = "<group>"; };
-		2E217A8A2444FECC0000AD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KittenRescue/Screens/Storyboards/KittenRescue/Screens/Storyboards/Base.lproj/Questionnaire.storyboard; sourceTree = "<group>"; };
+		2E217A8A2444FECC0000AD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KittenRescue/Screens/Storyboards/KittenRescue/Screens/Storyboards/Base.lproj/KittenProfileBuilder.storyboard; sourceTree = "<group>"; };
 		2E42E4B7244EA62200EFFA90 /* AgeCalculationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeCalculationService.swift; sourceTree = "<group>"; };
-		2E4DD6522447997D007F9709 /* KittenProfileScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenProfileScreenVC.swift; sourceTree = "<group>"; };
+		2E4DD6522447997D007F9709 /* KittenProfileBuilderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenProfileBuilderVC.swift; sourceTree = "<group>"; };
 		2E4F1FC4244369E80041465A /* KittenRescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KittenRescue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4F1FC7244369E80041465A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E4F1FC9244369E80041465A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		2E4F1FEE244369EA0041465A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5DE07F2458E9A1000D8961 /* KRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRButton.swift; sourceTree = "<group>"; };
 		2E5DE08224591B82000D8961 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2E5DE0852459DC67000D8961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KittenRescue/Screens/Storyboards/KittenRescue/Screens/Storyboards/KittenRescue/Screens/Storyboards/Base.lproj/Questionnaire.storyboard; sourceTree = "<group>"; };
 		2E8742A22443C4EF00190AAA /* CellCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCardView.swift; sourceTree = "<group>"; };
 		2E8742A42443CC2600190AAA /* KittenProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenProfileVC.swift; sourceTree = "<group>"; };
 		2E934F172444CE6E00322D26 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -90,7 +92,7 @@
 		2E9A5148244923B60059DE93 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		2E9A514A244928400059DE93 /* NotificationPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPublisher.swift; sourceTree = "<group>"; };
 		2E9CFC982444B21C00057429 /* QuestionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionList.swift; sourceTree = "<group>"; };
-		2E9CFC9A2444B29700057429 /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		2E9CFC9A2444B29700057429 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		2E9E7BF42443AF9A007B9832 /* KittenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenTableViewCell.swift; sourceTree = "<group>"; };
 		2E9E7BF62443AFB2007B9832 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		2E9E7BF92443BAF3007B9832 /* Kitten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitten.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		2E4F1FBB244369E80041465A = {
 			isa = PBXGroup;
 			children = (
+				2E5DE0842459DC67000D8961 /* Questionnaire.storyboard */,
 				2E4F1FC6244369E80041465A /* KittenRescue */,
 				2E4F1FE0244369EA0041465A /* KittenRescueTests */,
 				2E4F1FEB244369EA0041465A /* KittenRescueUITests */,
@@ -197,7 +200,7 @@
 		2E4F1FFB24436A750041465A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				2E9CFC9A2444B29700057429 /* ErrorMessages.swift */,
+				2E9CFC9A2444B29700057429 /* ErrorMessage.swift */,
 				2E1A0CE12450A3CA00565F05 /* ResultMessage.swift */,
 			);
 			path = Utilities;
@@ -217,7 +220,7 @@
 			children = (
 				2E9A5148244923B60059DE93 /* MainVC.swift */,
 				2ECFF1D62443AD16006B7057 /* KittenDashboardVC.swift */,
-				2E4DD6522447997D007F9709 /* KittenProfileScreenVC.swift */,
+				2E4DD6522447997D007F9709 /* KittenProfileBuilderVC.swift */,
 				2E8742A42443CC2600190AAA /* KittenProfileVC.swift */,
 				2ECFF1D82443AD33006B7057 /* NotificationsDashboardVC.swift */,
 				2EF71C7F244E722F00C2DB18 /* NotificationScreenVC.swift */,
@@ -233,7 +236,7 @@
 				2E4F1FCD244369E80041465A /* Main.storyboard */,
 				2ECFF1CC2443A8FE006B7057 /* KittenDashboard.storyboard */,
 				2ECFF1D42443AA67006B7057 /* NotificationsDashboard.storyboard */,
-				2E217A892444FECC0000AD90 /* Questionnaire.storyboard */,
+				2E217A892444FECC0000AD90 /* KittenProfileBuilder.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -395,8 +398,9 @@
 			files = (
 				2ECFF1CE2443A8FE006B7057 /* KittenDashboard.storyboard in Resources */,
 				2E4F1FD7244369EA0041465A /* LaunchScreen.storyboard in Resources */,
-				2E217A8B2444FECC0000AD90 /* Questionnaire.storyboard in Resources */,
+				2E217A8B2444FECC0000AD90 /* KittenProfileBuilder.storyboard in Resources */,
 				2E4F1FD4244369EA0041465A /* Assets.xcassets in Resources */,
+				2E5DE0862459DC67000D8961 /* Questionnaire.storyboard in Resources */,
 				2E4F1FCF244369E80041465A /* Main.storyboard in Resources */,
 				2ECFF1D52443AA67006B7057 /* NotificationsDashboard.storyboard in Resources */,
 			);
@@ -424,10 +428,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E217A882444FE8F0000AD90 /* QuestionnaireVC.swift in Sources */,
-				2E9CFC9B2444B29700057429 /* ErrorMessages.swift in Sources */,
+				2E9CFC9B2444B29700057429 /* ErrorMessage.swift in Sources */,
 				2E8742A32443C4EF00190AAA /* CellCardView.swift in Sources */,
 				2E42E4B8244EA62200EFFA90 /* AgeCalculationService.swift in Sources */,
-				2E4DD6532447997D007F9709 /* KittenProfileScreenVC.swift in Sources */,
+				2E4DD6532447997D007F9709 /* KittenProfileBuilderVC.swift in Sources */,
 				2EC8DB1424496E5100DC0C5C /* NotificationDataOperations.swift in Sources */,
 				2E9E7BF72443AFB2007B9832 /* NotificationTableViewCell.swift in Sources */,
 				2E9A514B244928400059DE93 /* NotificationPublisher.swift in Sources */,
@@ -485,12 +489,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2E217A892444FECC0000AD90 /* Questionnaire.storyboard */ = {
+		2E217A892444FECC0000AD90 /* KittenProfileBuilder.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2E217A8A2444FECC0000AD90 /* Base */,
 			);
-			name = Questionnaire.storyboard;
+			name = KittenProfileBuilder.storyboard;
 			sourceTree = "<group>";
 		};
 		2E4F1FCD244369E80041465A /* Main.storyboard */ = {
@@ -507,6 +511,14 @@
 				2E4F1FD6244369EA0041465A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2E5DE0842459DC67000D8961 /* Questionnaire.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E5DE0852459DC67000D8961 /* Base */,
+			);
+			name = Questionnaire.storyboard;
 			sourceTree = "<group>";
 		};
 		2ECFF1CC2443A8FE006B7057 /* KittenDashboard.storyboard */ = {
