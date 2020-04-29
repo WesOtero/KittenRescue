@@ -20,8 +20,8 @@ class QuestionnaireVC: UIViewController {
     @IBOutlet weak var questionImageView: UIImageView!
     @IBOutlet weak var questionLabel: UILabel!
     
-    @IBOutlet weak var choiceOneButton: UIButton!
-    @IBOutlet weak var choiceTwoButton: UIButton!
+    @IBOutlet weak var choiceOneButton: KRButton!
+    @IBOutlet weak var choiceTwoButton: KRButton!
     
     var ageDelegate: QuestionnaireResultDelegate!
     
@@ -51,8 +51,7 @@ class QuestionnaireVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func choiceSelected(_ sender: UIButton) {
-        
+    @IBAction func choiceSelected(_ sender: KRButton) {
         if questionIndex < questionList.count {
             let userChoice = sender.isEqual(choiceOneButton) ? 1 : 2
             selectionList[questionIndex] = userChoice
@@ -68,22 +67,32 @@ class QuestionnaireVC: UIViewController {
     }
     
     func traverseQuestionnaire() {
-        arePreviousAndSubmitButtonDisplayed()
         isChoiceSelected()
+        arePreviousAndSubmitButtonDisplayed()
         if questionIndex < questionList.count {
             questionLabel.text = questionList[questionIndex].question
         }
     }
     
     func isChoiceSelected() {
+        questionLabel.appear()
+        questionImageView.appear()
+        choiceOneButton.appear()
+        choiceTwoButton.appear()
         if questionIndex < questionList.count{
             if selectionList[questionIndex] == 1 {
-                choiceOneButton.tintColor = .green
+                choiceOneButton.tintColor = .white
+                choiceOneButton.backgroundColor = .systemGreen
+                choiceOneButton.appear()
                 choiceTwoButton.tintColor = .blue
+                choiceTwoButton.backgroundColor = .clear
                 questionList[questionIndex].userSelection = 1
             } else if selectionList[questionIndex] == 2{
                 choiceOneButton.tintColor = .blue
-                choiceTwoButton.tintColor = .green
+                choiceOneButton.backgroundColor = .clear
+                choiceTwoButton.tintColor = .white
+                choiceTwoButton.backgroundColor = .systemGreen
+                choiceTwoButton.appear()
                 questionList[questionIndex].userSelection = 2
             } else {
                 choiceOneButton.tintColor = .blue
@@ -106,6 +115,7 @@ class QuestionnaireVC: UIViewController {
         previousQuestionButton.setTitle("Previous", for: .normal)
         questionLabel.text = questionList[0].question
         questionIndex = 0
+        selectionList.removeAll()
         for _ in questionList {
             selectionList.append(0)
         }
@@ -113,11 +123,17 @@ class QuestionnaireVC: UIViewController {
     
     func endQuiz() {
         previousQuestionButton.setTitle("Restart", for: .normal)
+        previousQuestionButton.appear()
         choiceOneButton.isHidden = true
         choiceTwoButton.isHidden = true
         submitQuestionnaireButton.isHidden = false
         previousQuestionButton.isHidden = false
         kittenAge = AgeCalculationService.calculateKittenAge(question: questionList[questionIndex])
         questionLabel.text = "Your kitten is \(kittenAge) weeks old."
+    }
+    
+    func animateButton(button: KRButton) {
+        button.backgroundColor = .systemGreen
+        button.appear()
     }
 }

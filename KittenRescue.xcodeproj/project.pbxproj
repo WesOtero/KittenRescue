@@ -20,6 +20,8 @@
 		2E4F1FD7244369EA0041465A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4F1FD5244369EA0041465A /* LaunchScreen.storyboard */; };
 		2E4F1FE2244369EA0041465A /* KittenRescueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FE1244369EA0041465A /* KittenRescueTests.swift */; };
 		2E4F1FED244369EA0041465A /* KittenRescueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4F1FEC244369EA0041465A /* KittenRescueUITests.swift */; };
+		2E5DE0802458E9A1000D8961 /* KRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5DE07F2458E9A1000D8961 /* KRButton.swift */; };
+		2E5DE08324591B82000D8961 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5DE08224591B82000D8961 /* UIViewExtension.swift */; };
 		2E8742A32443C4EF00190AAA /* CellCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8742A22443C4EF00190AAA /* CellCardView.swift */; };
 		2E8742A52443CC2600190AAA /* KittenProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8742A42443CC2600190AAA /* KittenProfileVC.swift */; };
 		2E934F182444CE6E00322D26 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E934F172444CE6E00322D26 /* Question.swift */; };
@@ -79,6 +81,8 @@
 		2E4F1FE8244369EA0041465A /* KittenRescueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KittenRescueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4F1FEC244369EA0041465A /* KittenRescueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenRescueUITests.swift; sourceTree = "<group>"; };
 		2E4F1FEE244369EA0041465A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E5DE07F2458E9A1000D8961 /* KRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRButton.swift; sourceTree = "<group>"; };
+		2E5DE08224591B82000D8961 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2E8742A22443C4EF00190AAA /* CellCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCardView.swift; sourceTree = "<group>"; };
 		2E8742A42443CC2600190AAA /* KittenProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenProfileVC.swift; sourceTree = "<group>"; };
 		2E934F172444CE6E00322D26 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -234,6 +238,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		2E5DE08124591AED000D8961 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E5DE08224591B82000D8961 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2E934F162444C8EF00322D26 /* Persistance */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,9 +269,11 @@
 		2E9E7BF32443AF63007B9832 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				2E5DE08124591AED000D8961 /* Extensions */,
 				2E9E7BF42443AF9A007B9832 /* KittenTableViewCell.swift */,
 				2E9E7BF62443AFB2007B9832 /* NotificationTableViewCell.swift */,
 				2E8742A22443C4EF00190AAA /* CellCardView.swift */,
+				2E5DE07F2458E9A1000D8961 /* KRButton.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -424,6 +438,7 @@
 				2E934F182444CE6E00322D26 /* Question.swift in Sources */,
 				2E4F1FCA244369E80041465A /* SceneDelegate.swift in Sources */,
 				2E9E7BF52443AF9A007B9832 /* KittenTableViewCell.swift in Sources */,
+				2E5DE08324591B82000D8961 /* UIViewExtension.swift in Sources */,
 				2ECFF1D72443AD16006B7057 /* KittenDashboardVC.swift in Sources */,
 				2E9CFC992444B21C00057429 /* QuestionList.swift in Sources */,
 				2E8742A52443CC2600190AAA /* KittenProfileVC.swift in Sources */,
@@ -431,6 +446,7 @@
 				2E4F1FD2244369E80041465A /* KittenRescue.xcdatamodeld in Sources */,
 				2E9E7BFA2443BAF3007B9832 /* Kitten.swift in Sources */,
 				2EC8DB1024496C2000DC0C5C /* DataOperations.swift in Sources */,
+				2E5DE0802458E9A1000D8961 /* KRButton.swift in Sources */,
 				2E934F1B2444D22F00322D26 /* NotificationService.swift in Sources */,
 				2ECFF1D92443AD33006B7057 /* NotificationsDashboardVC.swift in Sources */,
 				2EC8DB1224496E2500DC0C5C /* KittenDataOperations.swift in Sources */,
